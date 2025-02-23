@@ -247,7 +247,7 @@ li {
 
 // cta
 .cta {
-  background-image: url(/img/cta-bg_1.png);
+  background-image: url(../img/cta-bg_1.png);
   background-position: center center;
   background-size: cover;
   padding: rem(40) 0 rem(120);
@@ -290,7 +290,7 @@ li {
 }
 
 .cta-btn__note {
-  background-image: url(/img/cta-note.png);
+  background-image: url(../img/cta-note.png);
   background-size: contain;
   padding: rem(8) rem(20) rem(20);
 }
@@ -570,7 +570,7 @@ li {
       &::after {
         content: "";
         position: absolute;
-        background-image: url(/img/arrow-icon.png);
+        background-image: url(../img/arrow-icon.png);
         background-repeat: no-repeat;
         background-size: contain;
         width: rem(32);
@@ -601,7 +601,7 @@ li {
 
   // cta
   .cta {
-    background-image: url(/img/cta-bg_2.png);
+    background-image: url(../img/cta-bg_2.png);
     padding: rem(40) 0 rem(80);
   }
 

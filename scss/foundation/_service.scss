@@ -122,7 +122,7 @@
   &:before {
     content: "";
     position: absolute;
-    background-image: url(/img/check-icon.png);
+    background-image: url(../img/check-icon.png);
     background-size: contain;
     width: rem(20);
     height: rem(20);
@@ -172,16 +172,16 @@
     color: $white;
     background-color: $red;
     text-transform: uppercase;
-    padding: rem(8) rem(16);
+    padding: rem(8);
     &:after {
       content: "";
       position: absolute;
-      background-image: url(/img/point-icon.png);
+      background-image: url(../img/point-icon.png);
       background-size: contain;
       width: rem(20);
       height: rem(20);
       top: 50%;
-      right: rem(16);
+      right: rem(8);
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
@@ -395,173 +395,7 @@
   }
 
   .plan-list__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     width: rem(500);
-    border-radius: rem(8);
-    -webkit-box-shadow: 0 0 rem(20) rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 rem(20) rgba(0, 0, 0, 0.2);
-  }
-
-  .plan-list__top {
-    background-color: $blue3;
-    border-radius: rem(8) rem(8) 0 0;
-    padding: rem(20);
-  }
-
-  #standard .plan-list__top {
-    background-color: $blue4;
-  }
-
-  #premium .plan-list__top {
-    background-color: $blue5;
-  }
-
-  #optional .plan-list__top {
-    background-color: $black;
-  }
-
-  .plan-list__ttl {
-    color: $white;
-    text-align: center;
-    h3 {
-      font-size: rem(24);
-      font-weight: 700;
-    }
-
-    p {
-      font-size: rem(18);
-      font-weight: 500;
-    }
-  }
-
-  .plan-list__bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    background-color: $white;
-    border-radius: 0 0 rem(8) rem(8);
-    padding: rem(20);
-  }
-
-  .plan-list__value {
-    font-family: $font-family-en;
-    font-size: rem(36);
-    font-weight: 700;
-    color: $blue3;
-    text-align: center;
-    span {
-      font-size: rem(24);
-      font-weight: 400;
-    }
-  }
-
-  #standard .plan-list__value {
-    color: $blue4;
-  }
-
-  #premium .plan-list__value {
-    color: $blue5;
-  }
-
-  .plan-list__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: rem(20);
-    margin-top: rem(40);
-  }
-
-  .plan-list__item {
-    position: relative;
-    padding-left: rem(28);
-    &:before {
-      content: "";
-      position: absolute;
-      background-image: url(/img/check-icon.png);
-      background-size: contain;
-      width: rem(20);
-      height: rem(20);
-      top: rem(4);
-      left: 0;
-    }
-    span {
-      font-size: rem(20);
-      font-weight: 700;
-    }
-  }
-
-  #optional .plan-list__items {
-    margin-top: 0;
-  }
-
-  .plan-list__item.__optional {
-    &:before {
-      display: none;
-    }
-  }
-
-  .plan-list__item span.__num {
-    position: absolute;
-    top: rem(8);
-    left: 0;
-    @include flex(center);
-    width: rem(20);
-    height: rem(20);
-    font-size: rem(14);
-    font-weight: 700;
-    line-height: 1;
-    color: $white;
-    background-color: $black;
-    border-radius: rem(4);
-  }
-
-  .plan-list__point {
-    margin-top: rem(40);
-    span {
-      position: relative;
-      display: block;
-      width: rem(78);
-      font-family: $font-family-en;
-      font-weight: 700;
-      line-height: 1;
-      color: $white;
-      background-color: $red;
-      text-transform: uppercase;
-      padding: rem(8) rem(16);
-      &:after {
-        content: "";
-        position: absolute;
-        background-image: url(/img/point-icon.png);
-        background-size: contain;
-        width: rem(20);
-        height: rem(20);
-        top: 50%;
-        right: rem(16);
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-      }
-    }
-    p {
-      margin-top: rem(8);
-    }
   }
 
   // flow

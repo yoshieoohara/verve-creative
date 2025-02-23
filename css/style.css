@@ -343,7 +343,7 @@ li {
 }
 
 .cta {
-  background-image: url(/img/cta-bg_1.png);
+  background-image: url(../img/cta-bg_1.png);
   background-position: center center;
   background-size: cover;
   padding: 2.5rem 0 7.5rem;
@@ -390,7 +390,7 @@ li {
 }
 
 .cta-btn__note {
-  background-image: url(/img/cta-note.png);
+  background-image: url(../img/cta-note.png);
   background-size: contain;
   padding: 0.5rem 1.25rem 1.25rem;
 }
@@ -638,7 +638,7 @@ li {
   .h-nav-list__item a::after {
     content: "";
     position: absolute;
-    background-image: url(/img/arrow-icon.png);
+    background-image: url(../img/arrow-icon.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 2rem;
@@ -664,7 +664,7 @@ li {
     margin-top: 2.5rem;
   }
   .cta {
-    background-image: url(/img/cta-bg_2.png);
+    background-image: url(../img/cta-bg_2.png);
     padding: 2.5rem 0 5rem;
   }
   .cta-ttl h2,
@@ -829,7 +829,7 @@ li {
 }
 .top {
   position: relative;
-  background-image: url(/img/fv-bg.png);
+  background-image: url(../img/fv-bg.png);
   background-size: cover;
   height: 50rem;
 }
@@ -1063,7 +1063,7 @@ li {
   position: absolute;
   top: -1.5rem;
   left: 0.75rem;
-  background-image: url(/img/quote-icon.png);
+  background-image: url(../img/quote-icon.png);
   background-size: contain;
   width: 3.75rem;
   height: 3.75rem;
@@ -1214,14 +1214,16 @@ li {
   display: inline-block;
   font-size: 1.3333333333vw;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem;
 }
 .solve-img2__txt:before,
 .solve-img3__txt:before {
   content: "";
   position: absolute;
-  top: -1.25rem;
-  left: -1.25rem;
-  background-image: url(/img/text-icon.png);
+  top: -0.625rem;
+  left: -0.625rem;
+  background-image: url(../img/text-icon.png);
   background-size: contain;
   width: 1.875rem;
   height: 1.75rem;
@@ -1238,7 +1240,7 @@ li {
 }
 .solve-img3__txt:before {
   left: unset;
-  right: -1.25rem;
+  right: -0.625rem;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
@@ -1291,7 +1293,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/img/page-link-bg_1.png);
+  background-image: url(../img/page-link-bg_1.png);
   background-size: contain;
   aspect-ratio: 550/200;
 }
@@ -1324,7 +1326,7 @@ li {
 }
 
 .link-btn.__about a {
-  background-image: url(/img/page-link-bg_2.png);
+  background-image: url(../img/page-link-bg_2.png);
 }
 
 .circle_3 {
@@ -1757,7 +1759,7 @@ li {
 .plan-list__item:before {
   content: "";
   position: absolute;
-  background-image: url(/img/check-icon.png);
+  background-image: url(../img/check-icon.png);
   background-size: contain;
   width: 1.25rem;
   height: 1.25rem;
@@ -1807,17 +1809,17 @@ li {
   color: #fff;
   background-color: #F20041;
   text-transform: uppercase;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 }
 .plan-list__point span:after {
   content: "";
   position: absolute;
-  background-image: url(/img/point-icon.png);
+  background-image: url(../img/point-icon.png);
   background-size: contain;
   width: 1.25rem;
   height: 1.25rem;
   top: 50%;
-  right: 1rem;
+  right: 0.5rem;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2025,157 +2027,7 @@ li {
     row-gap: 3.75rem;
   }
   .plan-list__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     width: 31.25rem;
-    border-radius: 0.5rem;
-    -webkit-box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.2);
-  }
-  .plan-list__top {
-    background-color: #24A8B1;
-    border-radius: 0.5rem 0.5rem 0 0;
-    padding: 1.25rem;
-  }
-  #standard .plan-list__top {
-    background-color: #5094C5;
-  }
-  #premium .plan-list__top {
-    background-color: #1B4995;
-  }
-  #optional .plan-list__top {
-    background-color: #111;
-  }
-  .plan-list__ttl {
-    color: #fff;
-    text-align: center;
-  }
-  .plan-list__ttl h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-  .plan-list__ttl p {
-    font-size: 1.125rem;
-    font-weight: 500;
-  }
-  .plan-list__bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    background-color: #fff;
-    border-radius: 0 0 0.5rem 0.5rem;
-    padding: 1.25rem;
-  }
-  .plan-list__value {
-    font-family: "Outfit", serif;
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: #24A8B1;
-    text-align: center;
-  }
-  .plan-list__value span {
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-  #standard .plan-list__value {
-    color: #5094C5;
-  }
-  #premium .plan-list__value {
-    color: #1B4995;
-  }
-  .plan-list__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 1.25rem;
-    margin-top: 2.5rem;
-  }
-  .plan-list__item {
-    position: relative;
-    padding-left: 1.75rem;
-  }
-  .plan-list__item:before {
-    content: "";
-    position: absolute;
-    background-image: url(/img/check-icon.png);
-    background-size: contain;
-    width: 1.25rem;
-    height: 1.25rem;
-    top: 0.25rem;
-    left: 0;
-  }
-  .plan-list__item span {
-    font-size: 1.25rem;
-    font-weight: 700;
-  }
-  #optional .plan-list__items {
-    margin-top: 0;
-  }
-  .plan-list__item.__optional:before {
-    display: none;
-  }
-  .plan-list__item span.__num {
-    position: absolute;
-    top: 0.5rem;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.25rem;
-    height: 1.25rem;
-    font-size: 0.875rem;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    background-color: #111;
-    border-radius: 0.25rem;
-  }
-  .plan-list__point {
-    margin-top: 2.5rem;
-  }
-  .plan-list__point span {
-    position: relative;
-    display: block;
-    width: 4.875rem;
-    font-family: "Outfit", serif;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    background-color: #F20041;
-    text-transform: uppercase;
-    padding: 0.5rem 1rem;
-  }
-  .plan-list__point span:after {
-    content: "";
-    position: absolute;
-    background-image: url(/img/point-icon.png);
-    background-size: contain;
-    width: 1.25rem;
-    height: 1.25rem;
-    top: 50%;
-    right: 1rem;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  .plan-list__point p {
-    margin-top: 0.5rem;
   }
   .flow {
     padding: 3.75rem 0;
@@ -2332,7 +2184,7 @@ li {
 }
 
 .company-wrap__ttl {
-  width: 20.4%;
+  width: 11.25rem;
   font-size: 1.125rem;
   font-weight: 700;
 }
@@ -2343,6 +2195,7 @@ li {
 
 .__list {
   position: relative;
+  display: block;
   padding-left: 1em;
 }
 
@@ -2439,6 +2292,7 @@ li {
     top: -2.8125rem;
     width: 22.75rem;
     height: 5.625rem;
+    clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
   }
   .company-wrap__con {
     padding: 2.5rem 1rem;
@@ -2623,6 +2477,7 @@ li {
   outline: none;
   border: none;
   padding: 0.25rem;
+  cursor: pointer;
 }
 
 .slick-dots .slick-active button {
@@ -2944,7 +2799,7 @@ li {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 }
 .__prev i,
 .__next i {
@@ -2954,7 +2809,7 @@ li {
 
 .__back {
   background-color: #eee;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 }
 
 @media screen and (min-width: 1501px) {
@@ -3136,7 +2991,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 7.5rem;
+  width: 6.25rem;
   font-size: 0.875rem;
   color: #fff;
   background-color: #F20041;
@@ -3454,7 +3309,7 @@ li {
 }
 
 .contact-wrap__form__box__area {
-  height: 37.5rem;
+  height: 15rem;
 }
 
 .contact-wrap__form__box__ttl {
@@ -3541,10 +3396,9 @@ li {
     width: -moz-fit-content;
     width: fit-content;
   }
-  .contact-wrap__form__box__area {
-    height: 15rem;
-  }
   .contact .contact-btn {
+    width: 15rem;
+    height: 3.75rem;
     margin: 0 auto;
   }
 }

@@ -3,7 +3,7 @@
 // top
 .top {
   position: relative;
-  background-image: url(/img/fv-bg.png);
+  background-image: url(../img/fv-bg.png);
   background-size: cover;
   height: rem(800);
 }
@@ -246,7 +246,7 @@
     position: absolute;
     top: rem(-24);
     left: rem(12);
-    background-image: url(/img/quote-icon.png);
+    background-image: url(../img/quote-icon.png);
     background-size: contain;
     width: rem(60);
     height: rem(60);
@@ -391,12 +391,14 @@
   display: inline-block;
   font-size: calc(20 / 1500 * 100vw);
   text-align: center;
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: rem(8);
   &:before {
     content: "";
     position: absolute;
-    top: rem(-20);
-    left: rem(-20);
-    background-image: url(/img/text-icon.png);
+    top: rem(-10);
+    left: rem(-10);
+    background-image: url(../img/text-icon.png);
     background-size: contain;
     width: rem(30);
     height: rem(28);
@@ -413,7 +415,7 @@
   right: -90%;
   &:before {
     left: unset;
-    right: rem(-20);
+    right: rem(-10);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
@@ -468,7 +470,7 @@
   a {
     position: relative;
     @include flex(center);
-    background-image: url(/img/page-link-bg_1.png);
+    background-image: url(../img/page-link-bg_1.png);
     background-size: contain;
     aspect-ratio: 550 / 200;
     h4 {
@@ -503,7 +505,7 @@
 
 .link-btn.__about {
   a {
-    background-image: url(/img/page-link-bg_2.png);
+    background-image: url(../img/page-link-bg_2.png);
   }
 }
 

@@ -72,7 +72,7 @@
 
 .news-list__category {
   @include flex(center);
-  width: rem(120);
+  width: rem(100);
   font-size: rem(14);
   color: $white;
   background-color: $red;

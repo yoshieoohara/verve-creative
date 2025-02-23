@@ -102,7 +102,7 @@
 }
 
 .company-wrap__ttl {
-  width: 20.4%;
+  width: rem(180);
   font-size: rem(18);
   font-weight: 700;
 }
@@ -113,6 +113,7 @@
 
 .__list {
   position: relative;
+  display: block;
   padding-left: 1em;
 }
 
@@ -227,6 +228,7 @@
     top: rem(-45);
     width: rem(364);
     height: rem(90);
+    clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
   }
 
   // company

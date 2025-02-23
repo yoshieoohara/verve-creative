@@ -97,7 +97,7 @@
 }
 
 .contact-wrap__form__box__area {
-  height: rem(600);
+  height: rem(240);
 }
 
 .contact-wrap__form__box__ttl {
@@ -189,11 +189,9 @@
     width: fit-content;
   }
 
-  .contact-wrap__form__box__area {
-    height: rem(240);
-  }
-
   .contact .contact-btn {
+    width: rem(240);
+    height: rem(60);
     margin: 0 auto;
   }
 }
