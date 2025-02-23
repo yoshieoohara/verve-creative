@@ -1,0 +1,240 @@
+@use "../global" as *;
+
+.about-container {
+  background: -o-linear-gradient(45deg, $white 40%, $blue5 100%);
+  background: linear-gradient(45deg, $white 40%, $blue5 100%);
+}
+
+// message
+.message {
+  padding: rem(80) 0;
+}
+
+.message-wrap {
+  max-width: rem(1200);
+}
+
+.message-wrap__con {
+  margin-top: rem(60);
+}
+
+.message-img {
+  width: 66.7%;
+  margin-left: auto;
+  img {
+    @include img;
+  }
+}
+
+.message-body {
+  position: relative;
+  width: 66.7%;
+  background-color: rgb(255, 255, 255, 0.7);
+  margin-top: -10%;
+  padding: rem(80) rem(40) rem(40);
+}
+
+.message-body__ttl {
+  position: absolute;
+  top: rem(-40);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  @include flex(center);
+  width: rem(680);
+  height: rem(80);
+  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  background-color: $blue5;
+  h3 {
+    font-size: rem(24);
+    font-weight: 500;
+    color: $white;
+    span {
+      font-size: rem(36);
+      font-weight: 700;
+    }
+  }
+}
+
+.message-body__txt {
+  p {
+    font-size: rem(18);
+    font-weight: 500;
+  }
+  p + p {
+    margin-top: rem(20);
+  }
+}
+
+// company
+.company {
+  background-color: $gray1;
+  padding: rem(80) 0;
+}
+
+.company-wrap {
+  max-width: rem(880);
+}
+
+.company-wrap__con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: rem(20);
+  background-color: #fff;
+  border-radius: rem(16);
+  margin-top: rem(60);
+  padding: rem(60) rem(80);
+}
+
+.company-wrap__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px dashed $black;
+  padding-bottom: 1.25rem;
+}
+
+.company-wrap__ttl {
+  width: 20.4%;
+  font-size: rem(18);
+  font-weight: 700;
+}
+
+.company-wrap__txt {
+  font-size: rem(18);
+}
+
+.__list {
+  position: relative;
+  padding-left: 1em;
+}
+
+.__list::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+  font-size: 1em;
+}
+
+.company-wrap__map {
+  width: 100%;
+  aspect-ratio: 720 / 450;
+  margin-top: rem(40);
+  iframe {
+    @include img;
+  }
+}
+
+@include mq("pc") {
+  // message
+  .message {
+    padding: rem(60) 0;
+  }
+
+  .message-wrap {
+    max-width: rem(800);
+  }
+
+  .message-wrap__con {
+    margin-top: rem(40);
+  }
+
+  .message-img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .message-body {
+    width: 80%;
+    margin: -7% auto 0;
+    padding: rem(60) rem(20) rem(20);
+  }
+
+  .message-body__ttl {
+    top: rem(-30);
+    width: rem(540);
+    height: rem(60);
+    -webkit-clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+    clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+    h3 {
+      font-size: rem(20);
+      span {
+        font-size: rem(24);
+      }
+    }
+  }
+
+  .message-body__txt {
+    p {
+      font-size: rem(16);
+    }
+  }
+
+  // company
+  .company {
+    padding: rem(60) 0;
+  }
+
+  .company-wrap {
+    max-width: rem(800);
+  }
+
+  .company-wrap__con {
+    margin-top: rem(40);
+    padding: rem(40);
+  }
+
+  .company-wrap__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .company-wrap__ttl {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: rem(16);
+  }
+
+  .company-wrap__txt {
+    font-size: rem(16);
+  }
+}
+
+@include mq("tab") {
+  .about-container {
+    background: -o-linear-gradient(30deg, $white 40%, $blue5 100%);
+    background: linear-gradient(60deg, $white 40%, $blue5 100%);
+  }
+
+  // message
+  .message-body {
+    width: calc(100% - rem(40));
+    margin: 0 auto;
+    padding: rem(80) rem(20) rem(20);
+  }
+
+  .message-body__ttl {
+    top: rem(-45);
+    width: rem(364);
+    height: rem(90);
+  }
+
+  // company
+  .company-wrap__con {
+    padding: rem(40) rem(16);
+  }
+
+  .company-wrap__map {
+    margin-top: rem(20);
+  }
+}

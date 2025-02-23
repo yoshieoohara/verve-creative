@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verve Creative</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="header-wrap">
+        <div class="header-wrap__logo">
+          <a href="/"><img src="img/logo.png" alt="Verve Creative" /></a>
+        </div>
+        <nav id="smooth" class="header-wrap__nav">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="/">トップ</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="service.html">サービス案内</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="about.html">私たちについて</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="works.html">制作実績</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="news.html">お知らせ</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- hamburger -->
+      <div class="h-open">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="h-nav">
+        <div id="h-nav__list">
+          <ul>
+            <li class="h-nav-list__item">
+              <a href="/">トップ</a>
+            </li>
+            <li class="h-nav-list__item">
+              <a href="service.html">サービス案内</a>
+            </li>
+            <li class="h-nav-list__item">
+              <a href="about.html">私たちについて</a>
+            </li>
+            <li class="h-nav-list__item">
+              <a href="works.html">制作実績</a>
+            </li>
+            <li class="h-nav-list__item">
+              <a href="news.html">お知らせ</a>
+            </li>
+          </ul>
+          <div class="h-nav__btn">
+            <div class="cta-btn">
+              <a href="#"
+                ><i class="fa-solid fa-download"></i> 資料をダウンロードする</a
+              >
+            </div>
+            <div class="cta-btn __contact">
+              <a href="contact.html"
+                ><i class="fa-solid fa-envelope"></i>お問い合わせをする</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- p-top -->
+      <section class="p-top" id="p-top">
+        <div class="p-top-wrap">
+          <div class="p-ttl__wrap">
+            <div class="p-ttl fadeUpTrigger">
+              <h1>contact</h1>
+              <p>お問い合わせ</p>
+            </div>
+            <div class="p-ttl__circle fadeInTrigger delay-10"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="contact-container">
+        <!-- breadcrumb -->
+        <section class="breadcrumb" id="breadcrumb">
+          <div class="breadcrumb-wrap">
+            <ul class="breadcrumb-wrap__list">
+              <li class="breadcrumb-wrap__list__item">
+                <a href="/"><span>トップ</span></a>
+              </li>
+              <li class="breadcrumb-wrap__list__item">
+                <a href="/"><span>></span></a>
+              </li>
+              <li class="breadcrumb-wrap__list__item">
+                <a href="contact.html"><span>お問い合わせ</span></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact" id="contact">
+          <div class="contact-wrap __inner">
+            <div class="contact-wrap__txt">
+              <p>
+                下記フォームよりお気軽にお問い合わせください。<br />確認後、担当者より通常2営業日以内にご連絡いたします。
+              </p>
+            </div>
+            <form id="form" method="post" class="contact-wrap__form">
+              <div class="contact-wrap__form__box">
+                <label for="name" class="contact-wrap__form__box__ttl"
+                  >氏名(漢字)<span>必須</span></label
+                >
+                <input
+                  type="text"
+                  class="contact-wrap__form__box__input"
+                  name="氏名(漢字)"
+                  required="required"
+                  placeholder="山田　太郎"
+                />
+              </div>
+              <div class="contact-wrap__form__box">
+                <label for="name" class="contact-wrap__form__box__ttl"
+                  >氏名(フリガナ)<span>必須</span></label
+                >
+                <input
+                  type="text"
+                  class="contact-wrap__form__box__input"
+                  name="氏名(フリガナ)"
+                  required="required"
+                  placeholder="ヤマダ　タロウ"
+                />
+              </div>
+              <div class="contact-wrap__form__box">
+                <label for="email" class="contact-wrap__form__box__ttl"
+                  >メールアドレス<span>必須</span></label
+                >
+                <input
+                  type="email"
+                  class="contact-wrap__form__box__input"
+                  name="メールアドレス"
+                  required="required"
+                  placeholder="XXXX@example.com"
+                />
+              </div>
+              <div class="contact-wrap__form__box">
+                <label for="tel" class="contact-wrap__form__box__ttl"
+                  >電話番号<span class="__optional">任意</span></label
+                >
+                <input
+                  type="tel"
+                  class="contact-wrap__form__box__input"
+                  name="電話番号"
+                  placeholder="000-0000-0000"
+                />
+              </div>
+              <div class="contact-wrap__form__box">
+                <label for="company" class="contact-wrap__form__box__ttl"
+                  >会社名<span class="__optional">任意</span></label
+                >
+                <input
+                  type="text"
+                  class="contact-wrap__form__box__input"
+                  name="会社名"
+                  placeholder="株式会社○○○○"
+                />
+              </div>
+              <div class="contact-wrap__form__box">
+                <label for="select" class="contact-wrap__form__box__ttl"
+                  >お問い合わせ項目<span>必須</span></label
+                >
+                <select
+                  name="お問い合わせ項目"
+                  required="required"
+                  class="contact-wrap__form__box__select"
+                >
+                  <optgroup value>
+                    <option
+                      value="選択してください"
+                      hidden
+                      class="contact-wrap__form__box__select__with"
+                    >
+                      選択してください
+                    </option>
+                    <option
+                      value="Webサイト制作のご相談"
+                      class="contact-wrap__form__box__select__with"
+                    >
+                      Webサイト制作のご相談
+                    </option>
+                    <option
+                      value="お見積もり依頼"
+                      class="contact-wrap__form__box__select__with"
+                    >
+                      お見積もり依頼
+                    </option>
+                    <option
+                      value="Webサイト運用・保守のご相談"
+                      class="contact-wrap__form__box__select__with"
+                    >
+                      Webサイト運用・保守のご相談
+                    </option>
+                    <option
+                      value="SEO・Webマーケティングについてのご相談"
+                      class="contact-wrap__form__box__select__with"
+                    >
+                      SEO・Webマーケティングについてのご相談
+                    </option>
+                    <option
+                      value="その他のお問い合わせ"
+                      class="contact-wrap__form__box__select__with"
+                    >
+                      その他のお問い合わせ
+                    </option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="contact-wrap__form__box __area">
+                <label for="message" class="contact-wrap__form__box__ttl"
+                  >お問い合わせ内容<span>必須</span></label
+                >
+                <textarea
+                  name="お問い合わせ内容"
+                  class="contact-wrap__form__box__area"
+                  id="message"
+                  required="required"
+                  placeholder="お問い合わせ内容を入力してください"
+                ></textarea>
+              </div>
+              <button type="submit" class="contact-btn">送信する</button>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <!-- pagetop -->
+      <p id="page-top"><a href="#"></a></p>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+      <div class="footer-wrap __inner">
+        <div class="footer-wrap__top">
+          <div class="footer-wrap__logo">
+            <a href="index.html">
+              <img src="img/logo-white.png" alt="Verve-Creative" />
+            </a>
+          </div>
+          <ul class="footer-nav__list">
+            <li class="nav-list__item">
+              <a href="/">トップ</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="service.html">サービス案内</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="about.html">私たちについて</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="works.html">制作実績</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="news.html">お知らせ</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer-wrap__sns">
+          <li class="footer-wrap__sns__icon">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="footer-wrap__sns__icon">
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+          <li class="footer-wrap__sns__icon">
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <small class="footer-wrap__copyright"
+          >©2025 Verve Creative All Rights Reserved.</small
+        >
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/f0efad86bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollgress/2.0.0/scrollgress.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+    <script type="text/javascript" src="js/animation.js"></script>
+    <script type="text/javascript" src="js/hamburger.js"></script>
+    <script type="text/javascript" src="js/pagetop.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+  </body>
+</html>

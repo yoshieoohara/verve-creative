@@ -1,0 +1,128 @@
+@use "../global" as *;
+
+// p-top
+.p-top {
+  position: relative;
+  background-image: url(../img/page-fv-bg.png);
+  background-position: 50%;
+  background-size: cover;
+}
+
+.p-top-wrap {
+  max-width: rem(1500);
+  height: rem(400);
+  margin: 0 auto;
+}
+
+.p-ttl__wrap {
+  position: relative;
+  top: 46%;
+  margin-left: 10%;
+}
+
+.p-ttl {
+  display: inline-block;
+  z-index: 0;
+  h1 {
+    font-family: $font-family-en;
+    font-size: rem(80);
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: rem(20);
+    font-weight: 700;
+    text-align: center;
+    margin-top: rem(12);
+  }
+}
+
+.p-ttl__circle {
+  position: absolute;
+  top: rem(-50);
+  left: rem(-50);
+  width: rem(120);
+  height: rem(120);
+  border-radius: 50%;
+  background-color: rgb(242, 0, 65);
+  -webkit-filter: blur(rem(20));
+  filter: blur(rem(20));
+  z-index: -1;
+}
+
+// breadcrumb
+.breadcrumb-wrap {
+  max-width: rem(1200);
+  margin: 0 auto;
+  padding: rem(20) rem(40) 0;
+}
+
+.breadcrumb-wrap__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: rem(16);
+}
+
+.breadcrumb-wrap__list__item {
+  a {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    span {
+      font-size: rem(16);
+      color: $gray3;
+    }
+  }
+}
+
+.breadcrumb-wrap__list__item:last-of-type {
+  a {
+    span {
+      color: $black;
+    }
+  }
+}
+
+@include mq("pc") {
+  .p-top-wrap {
+    height: rem(360);
+  }
+
+  .p-ttl {
+    top: 53%;
+    h1 {
+      font-size: rem(40);
+    }
+    p {
+      font-size: rem(16);
+      margin-top: rem(4);
+    }
+  }
+
+  .p-ttl__circle {
+    width: rem(60);
+    height: rem(60);
+    top: rem(-30);
+    left: rem(-30);
+    -webkit-filter: blur(rem(10));
+    filter: blur(rem(10));
+  }
+
+  .breadcrumb-wrap {
+    padding: rem(20) rem(24) 0;
+  }
+}
+
+@include mq("tab") {
+  .p-top-wrap {
+    height: rem(280);
+  }
+}
